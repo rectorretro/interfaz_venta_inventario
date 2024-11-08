@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu principal</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header class="header">
+    </header>
+    <nav class="header__nav">
+        <div class="header__ul-left">
+            <ul class="header__nav-list">
+                <li class="header__nav-item redondeo operaciones"><label for="selected">Operaciones</label></a>
+                    <input type="checkbox" id="selected">
+                </li>
+                <li class="header__nav-item redondeo"><a href="#">Conslutas??</a></li>
+            </ul>
+        </div>
+
+        <div class="header__ul-right">
+            <ul class="header__nav-list">
+                <li class="header__nav-item redondeo"><a href="#">Usuarios</a></li>
+                <li class="header__nav-item redondeo"><a href="#">Configuracion</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main class="menu__acciones" id="menu">
+        <div class="menu__wrapper">
+            <div class="menu__data-container">
+                <div class="menu__lista">
+
+                    <div class="menu__lista-item" id="ventas">
+                        <a class="menu__lista-item-link" href="https://www.twitch.tv/cocomunch" target="_blank"></a>
+                        <img src="./img/eve_foto_1.png" alt="imagen no soportada">
+                        <label class="label-item" for="ventas">Ventas</label>
+                    </div>
+
+                    <div class="menu__lista-item">
+                        <a class="menu__lista-item-link" href="https://www.twitch.tv/cocomunch" target="_blank"></a>
+                        <img src="./img/eve_foto_1.png" alt="">
+                        <label class="label-item" for="cotizaciones">Cotizaciones</label>
+                    </div>
+
+                    <div class="menu__lista-item">
+                        <a class="menu__lista-item-link" href="https://www.twitch.tv/cocomunch" target="_blank"></a>
+                        <img src="./img/eve_foto_1.png" alt="">
+                        <label class="label-item" for="pedidos">Pedidos</label>
+                    </div>
+
+                    <div class="menu__lista-item">
+                        <a class="menu__lista-item-link" href="https://www.twitch.tv/cocomunch" target="_blank"></a>
+                        <img src="./img/eve_foto_1.png" alt="">
+                        <label class="label-item" for="catalogo">Catalogo</label>
+                    </div>
+
+                    <div class="menu__lista-item">
+                        <a class="menu__lista-item-link" href="https://www.twitch.tv/cocomunch" target="_blank"></a>
+                        <img src="./img/eve_foto_1.png" alt="">
+                        <label class="label-item" for="inventario">Inventario</label>
+                    </div>
+
+                    <div class="menu__lista-item">
+                        <a class="menu__lista-item-link" href="https://www.twitch.tv/cocomunch" target="_blank"></a>
+                        <img src="./img/eve_foto_1.png" alt="">
+                        <label class="label-item" for="clientes"> Clientes</label>
+                    </div>
+
+                    </ul>
+                </div>
+            </div>
+    </main>
+    <section class="arquetipo_formulario clientes">
+        <div class="form__wrapper">
+            <h2 class="form__title">Clientes</h2>
+            <form class="form__form" action="">
+                <div class="form_container">
+                    <div class="form-picture">
+                        <img id="cliente_picture" src="./img/eve_foto_1.png" alt="">
+                        <label for="cliente_picture">ID: 117 </label>
+                    </div>
+                    <fieldset><!-- Simple inputs -->
+                        <legend>Información del cliente</legend>
+                        <div class="form_input">
+                            <label class="form_label" for="nombre">Nombre completo</label><!--Union mediante ID-->
+                            <input id="nombre" type="text" placeholder="Jhon Doe">
+                        </div>
+                        <div class="form_input">
+                            <label class="form_label">Email<!--Union mediante encerrar-->
+                                <input type="email" placeholder="ejemplo@gmail.com">
+                            </label>
+                        </div>
+                        <div class="form_input">
+                            <label class="form_label">Telefono<!--Union mediante encerrar-->
+                                <input type="tel" placeholder="7121111111">
+                            </label>
+                        </div>
+                        <div class="form_input">
+                            <label class="form_label">Credito
+                            <select id="referente">
+                                <option value="1">Aplicable</option>
+                                <option value="0">No aplicable</option>
+                            </select>
+                            </label>
+                        </div>
+                        <div class="form_input">
+                            <label class="form_label">Limite de credito<!--Union mediante encerrar-->
+                                <input type="number" placeholder="2800">
+                            </label>
+                        </div>
+                        <div class="form_input">
+                            <label class="form_label">Notas
+                            <textarea rows="8" placeholder="Lugar donde puedes colocar tus historias"></textarea>
+                            </label>    
+                        </div>
+                    </fieldset>
+                </div>
+            </form>
+        </div>
+    </section>
+    <section class="arquetipo_formulario productos">
+        <div class="form__wrapper">
+            <h2 class="form__title">Productos</h2>
+            <form class="form__form" action="">
+                <div class="form_container">
+                    <div class="form-picture">
+                        <img id="cliente_picture" src="./img/eve_foto_1.png" alt="">
+                        <label for="cliente_picture">ID: 117 </label>
+                    </div>
+                    <fieldset><!-- Simple inputs -->
+                        <legend>Información del producto</legend>
+                        <div class="form_input">
+                            <label class="form_label" for="nombre">Nombre producto</label><!--Union mediante ID-->
+                            <input id="nombre" type="text" placeholder="Producto generico">
+                        </div>
+                        <div class="form_input">
+                            <label class="form_label">Sku<!--Union mediante encerrar-->
+                                <input type="text" placeholder="ZG0011AQA">
+                            </label>
+                        </div>
+                        <div class="form_input">
+                            <label class="form_label">Tipo
+                            <select id="referente">
+                                <option value="1">Tipo 1</option>
+                                <option value="2">Tipo 2</option>
+                                <option value="3">Tipo 3</option>
+                                <option value="4">Tipo 4</option>
+                            </select>
+                            </label>
+                        </div>
+                        <div class="form_input">
+                            <label class="form_label">Disponibilidad
+                            <select id="referente">
+                                <option value="1">Disponible</option>
+                                <option value="0">No disponible</option>
+                            </select>
+                            </label>
+                        </div>
+                        <div class="form_input">
+                            <label class="form_label">Precio costo<!--Union mediante encerrar-->
+                                <input type="number" placeholder="800">
+                            </label>
+                        </div>
+                        <div class="form_input">
+                            <label class="form_label">Precio venta<!--Union mediante encerrar-->
+                                <input type="number" placeholder="700">
+                            </label>
+                        </div>
+                        <div class="form_input">
+                            <label class="form_label">Stock<!--Union mediante encerrar-->
+                                <input type="number" placeholder="2800">
+                            </label>
+                        </div>
+                        <div class="form_input">
+                            <label class="form_label">Descripción
+                            <textarea rows="8" placeholder="Lugar donde puedes colocar tus historias"></textarea>
+                            </label>    
+                        </div>
+                    </fieldset>
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer class="footer">
+        <Strong>JAML and VULTRE production</Strong> - Copyright 2024-2025
+        <div>
+            <ul>
+                <li>github</li>
+                <li>Facebok</li>
+                <li>twitter</li>
+                <li>linkeding</li>
+            </ul>
+        </div>
+    </footer>
+    <script src="./js/js.js"></script>
+</body>
+
+</html>
